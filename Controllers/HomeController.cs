@@ -19,7 +19,7 @@ namespace PokeInfo.Controllers
 
         [HttpGet]
         [Route("pokemon/{pokeid}")]
-        public IActionResult QueryPoke(int pokeid)
+        public IActionResult Pokemon(int pokeid)
         {
             var PokeInfo = new Pokemon();
             WebRequest.GetPokemonDataAsync(pokeid, ApiResponse =>
@@ -33,7 +33,7 @@ namespace PokeInfo.Controllers
             ViewData["Types"] = PokeInfo.Types;
             ViewData["Weight"] = PokeInfo.Weight;
             ViewData["Height"] = PokeInfo.Height;
-            return  View("Index");
+            return  View();
         }
 
     }

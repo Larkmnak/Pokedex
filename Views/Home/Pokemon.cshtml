@@ -1,0 +1,16 @@
+<h1>@ViewData["Name"]</h1>
+<ul>
+	<li>Types:
+		<ul>
+			@{
+				List<string> Types = null;
+				Types = ViewData["Types"] as List<string>;
+				foreach(string item in Types)
+				{
+					<li>@item</li>
+				}			
+			}
+		</ul>
+	<li>Height: @ViewData["Height"]00mm</li>
+	<li>Weight: @ViewData["Weight"]00g</li>
+</ul>
