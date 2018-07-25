@@ -1,0 +1,3 @@
+Name : Christopher Johnson
+Project Goal: Demonstrate .NET API and AJAX functionality
+Description: A very basic Pokedex
